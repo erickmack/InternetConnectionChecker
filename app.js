@@ -15,11 +15,10 @@ const speedTest = require('@opstalent/speedtest.net');
 cron.schedule('*/2 * * * *', () => {
 
     const test = speedTest({
-        maxTime: 5000
+        maxTime: 10000
     });
 
     test.on('data', data => {
-        console.log("##################################")
         console.log("DOWNLOAD: " + data.speeds.download)
         console.log("UPLOAD: " + data.speeds.upload)
         console.log("##################################")
@@ -69,5 +68,5 @@ app.get("/", (req, res) => { // when visiting the homepage, load the results and
 })
 
 app.listen(1029, () => {
-    console.log(`Express running → PORT 1029`);
+    console.log(`Website running on → http://localhost:1029/`);
 });
