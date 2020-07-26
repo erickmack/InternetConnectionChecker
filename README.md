@@ -1,61 +1,50 @@
-# Internet Connection Checker
+<h1 align="center">Welcome to InternetConnectionChecker 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/moonmatt/InternetConnectionChecker/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: ISC" src="https://img.shields.io/github/license/erickmack/InternetConnectionChecker" />
+  </a>
+  <a href="https://twitter.com/eriickmack" target="_blank">
+    <img alt="Twitter: eriickmack" src="https://img.shields.io/twitter/follow/eriickmack.svg?style=social" />
+  </a>
+</p>
 
-This tool allows you to make a costant checks on your Internet connection using the Speedtest.net API. I'm sorry if the code is not beautiful but I've made this just for myself in less than a day, however, it should work correctly.
+> A tool that allows you to make a costant speed checks on your Internet connection and graph it using the Speedtest.net API. Forked from [moonmatt's](https://github.com/moonmatt/InternetConnectionChecker) project.
 
-# Screenshot
+### 🏠 [Homepage](https://github.com/erickmack/InternetConnectionChecker)
 
-![Alt text](https://i.imgur.com/hVuKByr.png "A screenshot of the project")
+## Screenshot
+![Alt text](https://imgur.com/jt22CA1.png "A screenshot of the project")
 
-# What you need
+## Install
 
-- A device that is always online, I'm using a Raspberry Pi 3 b+, you can use whatever you want, even a pc.
-- An internet connection (obviously).
-- Node.js installed on your device (https://nodejs.org/).
-
-# Libraries needed
-
-- Express (https://www.npmjs.com/package/express), needed for the website.
-```bash
-npm install express
-```
-- Ejs (https://www.npmjs.com/package/ejs), needed for the frontend of the website.
-```bash
-npm install ejs
-```
-- Moment (https://www.npmjs.com/package/moment), needed to get the current time.
-```bash
-npm install moment
-```
-- Node-Cron (https://www.npmjs.com/package/node-cron), needed to execute the speedtest frequently.
-```bash
-npm install --save node-cron
-```
-- @opstalent/speedtest.net (https://www.npmjs.com/package/@opstalent/speedtest.net), needed to perform the speedtest
-```bash
-npm install --save @opstalent/speedtest.net
+```sh
+npm install
 ```
 
-# How to get started
+## Usage
 
-First of all, install Node.js, then create a folder, go on the command prompt, and type 
-```bash
-npm init
-```
-to initialize the project, then install all the required libraries (listed above).
-At this point download this repo and move all the files and folders (/public, /views and app.js) to your project's folder.
-
-Now everything should be ready, type in the console
-```bash
+```sh
 node app.js
 ```
-then visit the website localhost:1029 and wait for the first results to be shown.
-If you want to change the frequency of the speedtest, open app.js with a text editor and change the crontab on the line number 15. At the moment it is set to run every 2 minutes.
 
-# Conclusion
+## Author
 
-I hope you like this project, if you have any suggestion or improvement, please message me on Telegram, @moonmatt.
-My website is https://moonmatt.cf
+👤 **Erickmack**
 
-Reddit post: https://www.reddit.com/r/webdev/comments/hmga2d/i_noticed_my_connection_was_not_normal_ive_made_a/
+* Twitter: [@eriickmack](https://twitter.com/eriickmack)
+* Github: [@erickmack](https://github.com/erickmack)
 
+## 🤝 Contributing
 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/moonmatt/InternetConnectionChecker/issues). 
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
